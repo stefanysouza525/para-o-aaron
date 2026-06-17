@@ -1,0 +1,556 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nosso Pequeno Universo ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(180deg,#0f172a,#312e81,#1e1b4b);
+overflow-x:hidden;
+color:white;
+}
+
+section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+text-align:center;
+}
+
+.container{
+max-width:800px;
+}
+
+h1{
+font-size:60px;
+margin-bottom:30px;
+color:#ff8ab8;
+}
+
+p{
+font-size:24px;
+line-height:1.8;
+}
+
+button{
+margin-top:40px;
+padding:18px 35px;
+font-size:20px;
+border:none;
+border-radius:50px;
+background:#ff4d8d;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.heart{
+position:fixed;
+bottom:-50px;
+animation:subir 8s linear infinite;
+pointer-events:none;
+}
+
+@keyframes subir{
+
+from{
+transform:translateY(0);
+opacity:1;
+}
+
+to{
+transform:translateY(-110vh);
+opacity:0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="um-sonho.mp3" type="audio/mp3">
+</audio>
+
+<section>
+
+<div class="container">
+
+<h1>Para Aaron ❤️</h1>
+
+<p>
+
+Oi, meu bem.
+
+<br><br>
+
+Sei que os últimos dias talvez não estejam sendo os mais fáceis.
+
+<br><br>
+
+Então eu queria te lembrar de algumas coisas.
+
+<br><br>
+
+Primeiro...
+
+<br><br>
+
+<b>Ti gostuuu ❤️</b>
+
+<br><br>
+
+E segundo...
+
+<br><br>
+
+<b>Daa beijoo!!! 😘</b>
+
+</p>
+
+<button onclick="document.getElementById('cap1').scrollIntoView({behavior:'smooth'})">
+
+Começar nossa história ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<script>
+
+function criarCoracao(){
+
+let coracao=document.createElement("div");
+
+coracao.innerHTML="❤️";
+
+coracao.classList.add("heart");
+
+coracao.style.left=Math.random()*100+"vw";
+
+coracao.style.fontSize=(Math.random()*25+15)+"px";
+
+document.body.appendChild(coracao);
+
+setTimeout(()=>{
+coracao.remove();
+},8000);
+
+}
+
+setInterval(criarCoracao,500);
+
+</script>
+```
+```html
+<section id="cap1">
+
+<div class="container">
+
+<h1>28 de fevereiro de 2025 ❤️</h1>
+
+<p>
+
+Tudo começou por causa de um simples match no Tinder.
+
+<br><br>
+
+E quem diria que uma conversa mudaria tanto a minha vida?
+
+<br><br>
+
+Mal sabíamos que ali começava a nossa história. ✨
+
+</p>
+
+<button onclick="document.getElementById('cap2').scrollIntoView({behavior:'smooth'})">
+
+Continuar ❤️
+
+</button>
+
+</div>
+
+</section>
+
+
+<section id="cap2">
+
+<div class="container">
+
+<h1>1 de março de 2025 📺</h1>
+
+<p>
+
+Naquela noite você foi na minha casa.
+
+<br><br>
+
+Assistimos Solo Leveling.
+
+<br><br>
+
+Conversamos.
+
+<br><br>
+
+Rimos.
+
+<br><br>
+
+E sem perceber, ali começava uma das coisas mais bonitas que já aconteceram comigo. ❤️
+
+</p>
+
+<button onclick="document.getElementById('cap3').scrollIntoView({behavior:'smooth'})">
+
+Continuar ❤️
+
+</button>
+
+</div>
+
+</section>
+
+
+<section id="cap3">
+
+<div class="container">
+
+<h1>26 de abril de 2025 ❤️</h1>
+
+<p>
+
+Foi nesse dia que você me pediu em namoro.
+
+<br><br>
+
+E desde então...
+
+<br><br>
+
+Eu escolho você todos os dias.
+
+<br><br>
+
+Hoje.
+
+<br><br>
+
+Amanhã.
+
+<br><br>
+
+E em todos os dias que vierem. ❤️
+
+</p>
+
+<button onclick="document.getElementById('contador').scrollIntoView({behavior:'smooth'})">
+
+Tem mais uma surpresa ❤️
+
+</button>
+
+</div>
+
+</section>
+
+
+<section id="contador">
+
+<div class="container">
+
+<h1>❤️ Nosso Tempo Juntos ❤️</h1>
+
+<h2 id="diasNamoro" style="font-size:40px;color:#ffd4e6;"></h2>
+
+<p>
+
+E ainda é só o começo da nossa história. 🥹❤️
+
+</p>
+
+</div>
+
+</section>
+
+<script>
+
+function atualizarContador(){
+
+let inicio = new Date("2025-04-26");
+let agora = new Date();
+
+let diferenca = agora - inicio;
+
+let dias = Math.floor(diferenca/(1000*60*60*24));
+
+document.getElementById("diasNamoro").innerHTML =
+dias + " dias de amor ❤️";
+
+}
+
+setInterval(atualizarContador,1000);
+
+atualizarContador();
+
+</script>
+```
+```html
+<section id="quiz">
+
+<div class="container">
+
+<h1>😂 Perguntas importantes ❤️</h1>
+
+<p>Quem é o homem mais lindo do universo?</p>
+
+<button onclick="respostaErrada()">Henry Cavill</button>
+
+<button onclick="respostaErrada()">Sung Jinwoo</button>
+
+<button onclick="respostaCerta()">Aaron ❤️</button>
+
+<br><br>
+
+<p>O que a Stefany mais ama?</p>
+
+<button onclick="respostaErrada()">Chocolate</button>
+
+<button onclick="respostaErrada()">Dormir</button>
+
+<button onclick="respostaCerta()">Você ❤️</button>
+
+<h2 id="resultado"></h2>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h1>💌 Abra quando estiver triste</h1>
+
+<p>
+
+Meu bem,
+
+<br><br>
+
+Você não precisa carregar tudo sozinho.
+
+<br><br>
+
+Pode contar comigo nos dias bons e nos dias difíceis.
+
+<br><br>
+
+Eu estarei aqui para te ouvir, te abraçar e te fazer sorrir.
+
+<br><br>
+
+Ti gostuuu ❤️
+
+<br><br>
+
+Daa beijoo!!! 😘
+
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h1>📸 Nossos Momentos ❤️</h1>
+
+<img src="foto1.jpg" width="250">
+
+<img src="foto2.webp" width="250">
+
+<br><br>
+
+<img src="foto3.jpg" width="250">
+
+<img src="foto4.webp" width="250">
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h1>❤️ Ti gostuuu ❤️</h1>
+
+<p>
+
+Aaron,
+
+<br><br>
+
+Obrigada por ter aparecido na minha vida.
+
+<br><br>
+
+Obrigada por todas as conversas.
+
+<br><br>
+
+Por todas as risadas.
+
+<br><br>
+
+Por todas as noites assistindo Solo Leveling.
+
+<br><br>
+
+Obrigada por me escolher.
+
+<br><br>
+
+E quero que você saiba que eu também escolho você.
+
+<br><br>
+
+Hoje.
+
+<br><br>
+
+Amanhã.
+
+<br><br>
+
+E em todos os dias que vierem.
+
+<br><br>
+
+✨ E em todas as vidas, em todos os universos, eu escolheria você.
+
+<br><br>
+
+❤️ E se eu pudesse voltar no tempo, daria match com você de novo.
+
+<br><br>
+
+Com amor,
+
+<br><br>
+
+❤️ Stefany
+
+</p>
+
+</div>
+
+</section>
+
+
+<script>
+
+function respostaErrada(){
+
+document.getElementById("resultado").innerHTML =
+"😂 Resposta incorreta. Tenta de novo!";
+
+}
+
+function respostaCerta(){
+
+document.getElementById("resultado").innerHTML =
+"❤️ Eu sabia que podia confiar em você!";
+
+}
+
+</script>
+```
+```html
+<section>
+
+<div class="container">
+
+<h1>😘 Daa beijoo!!!</h1>
+
+<p>
+
+💋 Beijo virtual enviado com sucesso ❤️
+
+<br><br>
+
+Ti gostuuu ❤️
+
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h1>❤️ Eu te amo infinitamente ❤️</h1>
+
+<p>
+
+✨ E em todas as vidas, em todos os universos, eu escolheria você.
+
+<br><br>
+
+❤️ E se eu pudesse voltar no tempo, daria match com você de novo.
+
+<br><br>
+
+Obrigada por existir.
+
+<br><br>
+
+Com amor,
+
+<br><br>
+
+❤️ Stefany
+
+</p>
+
+</div>
+
+</section>
+
+</body>
+
+</html>
